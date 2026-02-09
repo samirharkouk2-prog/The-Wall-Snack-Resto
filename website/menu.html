@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Wall Snack & Resto</title>
+    <meta name="description" content="Découvrez notre menu complet de burgers, tacos, pizzas et street food à Dely Ibrahim.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-slideshow">
+            <div class="slide active" data-image="../backgrounds/burger-melted-cheese.jpg.jpg"></div>
+            <div class="slide" data-image="../backgrounds/burger-on-board.jpg.jpg"></div>
+            <div class="slide" data-image="../backgrounds/double-cheese-burger.jpg.jpg"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.jpg" alt="The Wall Snack & Resto" class="header__logo-img">
+                The Wall Snack & Resto
+            </a>
+            
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">ACCUEIL</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="menu.html" class="header__nav-link header__nav-link--active">MENU</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href=\"instagram.html\" class="header__nav-link">INSTAGRAM</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">À PROPOS</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="location.html" class="header__nav-link">LOCALISATION</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact.html" class="header__nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                
+                <button class="header__cta-button">VOIR LE MENU</button>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title-section">
+        <div class="container">
+            <h1 class="page-title">MENU</h1>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="menu-section__container">
+            <!-- Search Bar -->
+            <div class="menu-search sticky-search">
+                <input type="text" class="menu-search__input" placeholder="Rechercher un plat, une boisson, une option...">
+                <span class="menu-search__icon">🔍</span>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="menu-categories">
+                <button class="category-tab category-tab--active" data-category="burgers">🍔 NOS BURGERS</button>
+                <button class="category-tab" data-category="tacos">🌯 TACOS & BOWLS</button>
+                <button class="category-tab" data-category="sandwiches">🥖 NOS SANDWICHS</button>
+                <button class="category-tab" data-category="pizzas">🍕 NOS PIZZAS</button>
+                <button class="category-tab" data-category="salads">🥗 SALADES, PÂTES & GRILLADES</button>
+                <button class="category-tab" data-category="sides">🍟 ACCOMPAGNEMENTS & BOISSONS</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Burgers Category -->
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="menu1">
+                    <h3 class="menu-card__title">Menu +300 DA</h3>
+                    <p class="menu-card__description">Burger + Frites + Boisson</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+300 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="smash1">
+                    <h3 class="menu-card__title">Smash</h3>
+                    <p class="menu-card__description">Cornichons, 50gr viande hachée, fromage, sauce smash</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">350 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="double_smash1">
+                    <h3 class="menu-card__title">Double Smash</h3>
+                    <p class="menu-card__description">50gr viande hachée x2, fromage x2</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="triple_smash1">
+                    <h3 class="menu-card__title">Triple Smash</h3>
+                    <p class="menu-card__description">50gr viande hachée x3, fromage x3</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="le_braise1">
+                    <h3 class="menu-card__title menu-card__title--new">Le Braisé (New)</h3>
+                    <p class="menu-card__description">Poulet grillé, sauce tartare</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="croustyl1">
+                    <h3 class="menu-card__title">Croustyl</h3>
+                    <p class="menu-card__description">Poulet pané, sauce à l'ail</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="classic1">
+                    <h3 class="menu-card__title">Classic</h3>
+                    <p class="menu-card__description">Viande hachée, sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="normand1">
+                    <h3 class="menu-card__title">Normand</h3>
+                    <p class="menu-card__description">Camembert, sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="radicale1">
+                    <h3 class="menu-card__title">Radicale</h3>
+                    <p class="menu-card__description">Œuf, fromage</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">550 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="brooklyn1">
+                    <h3 class="menu-card__title">Brooklyn</h3>
+                    <p class="menu-card__description">Oignons caramélisés</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">550 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="butcher1">
+                    <h3 class="menu-card__title menu-card__title--new">Butcher (New)</h3>
+                    <p class="menu-card__description">Galette PDT, sauce tartare</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="american1">
+                    <h3 class="menu-card__title">American</h3>
+                    <p class="menu-card__description">Chiche kebab, sauce BBQ</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="mexicain1">
+                    <h3 class="menu-card__title">Mexicain</h3>
+                    <p class="menu-card__description">Poivrons, sauce BBQ piquante</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="mixte1">
+                    <h3 class="menu-card__title">Mixte</h3>
+                    <p class="menu-card__description">Steak haché + poulet pané</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="big_city1">
+                    <h3 class="menu-card__title">Big City</h3>
+                    <p class="menu-card__description">200gr steak, double sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tacos & Bowls Category -->
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="tacos_m1">
+                    <h3 class="menu-card__title">Tacos M (1 viande)</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="tacos_l1">
+                    <h3 class="menu-card__title">Tacos L (2 viandes)</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="tacos_xl1">
+                    <h3 class="menu-card__title">Tacos XL (3 viandes)</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1050 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="bowls_m1">
+                    <h3 class="menu-card__title">Bowls M</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="bowls_l1">
+                    <h3 class="menu-card__title">Bowls L</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="viandes1">
+                    <h3 class="menu-card__title">Viandes</h3>
+                    <p class="menu-card__description">Poulet Tikka, Tandoori, Tenders, Boursin, Merguez, Chiche Kebab, Viande Hachée</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">Variable</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="supplements1">
+                    <h3 class="menu-card__title">Suppléments</h3>
+                    <p class="menu-card__description">Cordon Bleu +100 DA | Steak de bœuf +200 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+100/+200 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="gratine1">
+                    <h3 class="menu-card__title">Gratiné</h3>
+                    <p class="menu-card__description">M +200 DA | L +300 DA | XL +400 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+200/+300/+400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandwiches Category -->
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="menu_sandwich1">
+                    <h3 class="menu-card__title">Menu +300 DA</h3>
+                    <p class="menu-card__description">Sandwich + Frites + Boisson</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+300 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="le_quatro1">
+                    <h3 class="menu-card__title">Le Quatro</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="boursin1">
+                    <h3 class="menu-card__title">Boursin</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="tandoori1">
+                    <h3 class="menu-card__title">Tandoori</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="tikka1">
+                    <h3 class="menu-card__title">Tikka</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="tenders1">
+                    <h3 class="menu-card__title">Tenders</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="toscan1">
+                    <h3 class="menu-card__title">Toscan</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">550 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="chiche_kebab1">
+                    <h3 class="menu-card__title">Chiche Kebab</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">550 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="chicken_cheese1">
+                    <h3 class="menu-card__title">Chicken Cheese</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="buffalo1">
+                    <h3 class="menu-card__title">Buffalo</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="lalgerois1">
+                    <h3 class="menu-card__title">L'Algérois</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="philly_cheese1">
+                    <h3 class="menu-card__title">Philly Cheese</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">750 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="loriental1">
+                    <h3 class="menu-card__title menu-card__title--new">L'Oriental (New)</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">750 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizzas Category -->
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="bordure_fromage1">
+                    <h3 class="menu-card__title">Bordure fromage</h3>
+                    <p class="menu-card__description">Medium +250 DA | Large +500 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+250/+500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="base_sauce_tomate1">
+                    <h3 class="menu-card__title">Base Sauce Tomate</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price"></span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="classica1">
+                    <h3 class="menu-card__title">Classica</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">500 / 1100 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="vegetarienne1">
+                    <h3 class="menu-card__title">Vegetarienne</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">700 / 1400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="reine1">
+                    <h3 class="menu-card__title">Reine</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">850 / 1700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="tikka_pizza1">
+                    <h3 class="menu-card__title">Tikka</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">850 / 1700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="pepperoni1">
+                    <h3 class="menu-card__title">Pepperoni</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">900 / 1800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="texane1">
+                    <h3 class="menu-card__title">Texane</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">950 / 1900 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="pescator1">
+                    <h3 class="menu-card__title">Pescator</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1800 / 3600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="base_creme_fraiche1">
+                    <h3 class="menu-card__title">Base Crème Fraîche</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price"></span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="venezia1">
+                    <h3 class="menu-card__title">Venezia</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">850 / 1700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="chevre_miel1">
+                    <h3 class="menu-card__title">Chèvre Miel</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">950 / 1900 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="boursin_pizza1">
+                    <h3 class="menu-card__title">Boursin</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1200 / 2400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="norvegienne1">
+                    <h3 class="menu-card__title">Norvégienne</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1550 / 3100 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salads Category -->
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="pates1">
+                    <h3 class="menu-card__title">Pâtes</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">900 DA → 1700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="salades1">
+                    <h3 class="menu-card__title">Salades</h3>
+                    <p class="menu-card__description">Nature 400 DA | César 800 DA | Cocktail Saumon 1100 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">400 / 800 / 1100 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="grillades1">
+                    <h3 class="menu-card__title">Grillades</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price"></span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="pilon_poulet1">
+                    <h3 class="menu-card__title">Pilon de poulet</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1200 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="milanaise1">
+                    <h3 class="menu-card__title">Milanaise</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="entrecote1">
+                    <h3 class="menu-card__title">Entrecôte</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sides & Drinks Category -->
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="frites1">
+                    <h3 class="menu-card__title">Frites</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">200 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="frites_sauce1">
+                    <h3 class="menu-card__title">Frites sauce fromagère</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">300 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="tenders3pcs1">
+                    <h3 class="menu-card__title">Tenders 3pcs</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">350 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="tenders6pcs1">
+                    <h3 class="menu-card__title">Tenders 6pcs</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="tenders9pcs1">
+                    <h3 class="menu-card__title">Tenders 9pcs</h3>
+                    <p class="menu-card__description"></p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">900 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="boissons1">
+                    <h3 class="menu-card__title">Boissons</h3>
+                    <p class="menu-card__description">Eau 50 DA | Canette 100–150 DA | Jus nature 450 DA | Milkshake / Smoothie 500 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">50 / 100-150 / 450 / 500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart -->
+    <div class="cart-float">
+        <span class="cart-float__icon">🛒</span>
+        <span class="cart-float__badge">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2026 The Wall Snack & Resto. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>

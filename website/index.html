@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall Snack & Resto - Street Food Moderne</title>
+    <meta name="description" content="The Wall Snack & Resto à Dely Ibrahim - Burgers, tacos, pizzas et street food moderne. Commandez facilement par téléphone ou WhatsApp.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Animated Background System -->
+    <div class="background-container">
+        <div class="background-slideshow">
+            <div class="slide active" data-image="images/backgrounds/burger-melted-cheese.jpg.jpg"></div>
+            <div class="slide" data-image="images/backgrounds/burger-on-board.jpg.jpg"></div>
+            <div class="slide" data-image="images/backgrounds/double-cheese-burger.jpg.jpg"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.jpg" alt="The Wall Snack & Resto" class="header__logo-img">
+                The Wall Snack & Resto
+            </a>
+            
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#hero" class="header__nav-link header__nav-link--active">ACCUEIL</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#menu" class="header__nav-link">MENU</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#instagram" class="header__nav-link">INSTAGRAM</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about" class="header__nav-link">À PROPOS</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#location" class="header__nav-link">LOCALISATION</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contact" class="header__nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                
+                <div class="header__actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="fr">FR</button>
+                        <button class="lang-btn" data-lang="ar">AR</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <button class="header__cta-button">VOIR LE MENU</button>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__accent-line"></div>
+        <div class="container hero__container">
+            <p class="hero__tagline">STREET FOOD MODERNE</p>
+            <h1 class="hero__title">THE WALL SNACK & RESTO</h1>
+            <p class="hero__subtitle">
+                Le spot urbain pour burgers, tacos, pizzas et bien plus. 
+                Rapide, généreux, et fait pour commander facilement.
+            </p>
+            <div class="hero__buttons">
+                <a href="#menu" class="hero__button hero__button--primary" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">VOIR LE MENU</a>
+                <a href="https://wa.me/213555219684" class="hero__button hero__button--secondary" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">COMMANDER WHATSAPP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Props Section -->
+    <section class="props-section section-padding" id="props">
+        <div class="container">
+            <div class="props-grid">
+                <div class="prop-item animate-on-scroll">
+                    <div class="prop-item__icon">🔥</div>
+                    <h3 class="prop-item__title">PASSION</h3>
+                    <p class="prop-item__description">Chaque plat est préparé avec amour et dévouement pour offrir la meilleure expérience gustative.</p>
+                </div>
+                <div class="prop-item animate-on-scroll">
+                    <div class="prop-item__icon">⚡</div>
+                    <h3 class="prop-item__title">RAPIDITÉ</h3>
+                    <p class="prop-item__description">Service express sans compromis sur la qualité pour satisfaire vos envies du moment.</p>
+                </div>
+                <div class="prop-item animate-on-scroll">
+                    <div class="prop-item__icon">🌟</div>
+                    <h3 class="prop-item__title">QUALITÉ</h3>
+                    <p class="prop-item__description">Ingrédients frais sélectionnés et recettes élaborées pour garantir l'excellence.</p>
+                </div>
+                <div class="prop-item animate-on-scroll">
+                    <div class="prop-item__icon">💎</div>
+                    <h3 class="prop-item__title">PREMIUM</h3>
+                    <p class="prop-item__description">Une expérience street-food haut de gamme accessible à tous à Dely Ibrahim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-logo-placeholder animate-on-scroll">
+                    <img src="images/logo.jpg" alt="The Wall Snack & Resto Logo" style="max-width: 100%; height: auto; border-radius: 50%;">
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <h2 class="section-title">THE WALL SNACK & RESTO</h2>
+                    <div class="about-tagline">GOURMAND, RAPIDE, URBAIN</div>
+                    <p class="about-text">
+                        The Wall Snack & Resto propose une cuisine street-food générée avec des recettes modernes, 
+                        des ingrédients soignés et un service rapide.
+                    </p>
+                    <p class="about-text">
+                        Burgers, tacos, bowls, pizzas, grillades et accompagnements : tout est pensé pour une commande 
+                        simple, claire et efficace.
+                    </p>
+                    <p class="about-text">
+                        Notre mission est de révolutionner l'expérience du street food à Dely Ibrahim en alliant 
+                        tradition culinaire et innovation moderne.
+                    </p>
+                    <a href="#menu" class="hero__button hero__button--primary" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">DÉCOUVRIR LE MENU</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section section-padding" id="menu">
+        <div class="menu-section__container">
+            <div class="text-center section-padding">
+                <h2 class="page-title">NOTRE MENU</h2>
+                <p style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; margin-bottom: var(--spacing-l);">
+                    Découvrez nos spécialités préparées avec des ingrédients frais et des recettes modernes
+                </p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="menu-search sticky-search">
+                <input type="text" class="menu-search__input" placeholder="Rechercher un plat, une boisson, une option...">
+                <span class="menu-search__icon">🔍</span>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="menu-categories">
+                <button class="category-tab category-tab--active" data-category="burgers">🍔 NOS BURGERS</button>
+                <button class="category-tab" data-category="tacos">🌯 TACOS & BOWLS</button>
+                <button class="category-tab" data-category="sandwiches">🥖 NOS SANDWICHS</button>
+                <button class="category-tab" data-category="pizzas">🍕 NOS PIZZAS</button>
+                <button class="category-tab" data-category="salads">🥗 SALADES & GRILLADES</button>
+                <button class="category-tab" data-category="sides">🍟 ACCOMPAGNEMENTS</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Burgers Category -->
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="menu1">
+                    <div class="menu-card__image-container">
+                        <img src="images/house-special-burger.jpg.png" alt="Menu Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Menu +300 DA</h3>
+                    <p class="menu-card__description">Burger + Frites + Boisson</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+300 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="smash1">
+                    <div class="menu-card__image-container">
+                        <img src="images/smash-burger.jpg.png" alt="Smash Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Smash</h3>
+                    <p class="menu-card__description">Cornichons, 50gr viande hachée, fromage, sauce smash</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">350 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="double_smash1">
+                    <div class="menu-card__image-container">
+                        <img src="images/double-burger.jpg.png" alt="Double Smash" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Double Smash</h3>
+                    <p class="menu-card__description">50gr viande hachée x2, fromage x2</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="triple_smash1">
+                    <div class="menu-card__image-container">
+                        <img src="images/giant-burger.jpg.png" alt="Triple Smash" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Triple Smash</h3>
+                    <p class="menu-card__description">50gr viande hachée x3, fromage x3</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="le_braise1">
+                    <div class="menu-card__image-container">
+                        <img src="images/grilled-burger.jpg.png" alt="Le Braisé" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title menu-card__title--new">Le Braisé (New)</h3>
+                    <p class="menu-card__description">Poulet grillé, sauce tartare</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="croustyl1">
+                    <div class="menu-card__image-container">
+                        <img src="images/crispy-chicken-burger.jpg.png" alt="Croustyl" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Croustyl</h3>
+                    <p class="menu-card__description">Poulet pané, sauce à l'ail</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="classic1">
+                    <div class="menu-card__image-container">
+                        <img src="images/classic-burger.jpg.png" alt="Classic Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Classic</h3>
+                    <p class="menu-card__description">Viande hachée, sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="normand1">
+                    <div class="menu-card__image-container">
+                        <img src="images/premium-burger.jpg.png" alt="Normand Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Normand</h3>
+                    <p class="menu-card__description">Camembert, sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="radicale1">
+                    <div class="menu-card__image-container">
+                        <img src="images/cheese-burger.jpg.png" alt="Radicale Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Radicale</h3>
+                    <p class="menu-card__description">Œuf, fromage</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">550 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="brooklyn1">
+                    <div class="menu-card__image-container">
+                        <img src="images/grilled-burger.jpg.png" alt="Brooklyn Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Brooklyn</h3>
+                    <p class="menu-card__description">Oignons caramélisés</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">550 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="butcher1">
+                    <div class="menu-card__image-container">
+                        <img src="images/beef-burger.jpg.png" alt="Butcher Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title menu-card__title--new">Butcher (New)</h3>
+                    <p class="menu-card__description">Galette PDT, sauce tartare</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="american1">
+                    <div class="menu-card__image-container">
+                        <img src="images/american-burger.jpg.png" alt="American Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">American</h3>
+                    <p class="menu-card__description">Chiche kebab, sauce BBQ</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="mexicain1">
+                    <div class="menu-card__image-container">
+                        <img src="images/spicy-burger.jpg.png" alt="Mexicain Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Mexicain</h3>
+                    <p class="menu-card__description">Poivrons, sauce BBQ piquante</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="mixte1">
+                    <div class="menu-card__image-container">
+                        <img src="images/double-burger.jpg.png" alt="Mixte Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Mixte</h3>
+                    <p class="menu-card__description">Steak haché + poulet pané</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="burgers" data-item-id="big_city1">
+                    <div class="menu-card__image-container">
+                        <img src="images/giant-burger.jpg.png" alt="Big City Burger" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Big City</h3>
+                    <p class="menu-card__description">200gr steak, double sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tacos & Bowls Category -->
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="tacos_m1">
+                    <div class="menu-card__image-container">
+                        <img src="images/classic-burger.jpg.png" alt="Tacos M" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tacos M (1 viande)</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="tacos_l1">
+                    <div class="menu-card__image-container">
+                        <img src="images/double-burger.jpg.png" alt="Tacos L" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tacos L (2 viandes)</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="tacos_xl1">
+                    <div class="menu-card__image-container">
+                        <img src="images/giant-burger.jpg.png" alt="Tacos XL" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tacos XL (3 viandes)</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1050 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="bowls_m1">
+                    <div class="menu-card__image-container">
+                        <img src="images/house-special-burger.jpg.png" alt="Bowls M" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Bowls M</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="bowls_l1">
+                    <div class="menu-card__image-container">
+                        <img src="images/premium-burger.jpg.png" alt="Bowls L" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Bowls L</h3>
+                    <p class="menu-card__description">Garnis de frites et sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="viandes1">
+                    <div class="menu-card__image-container">
+                        <img src="images/classic-burger.jpg.png" alt="Viandes" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Viandes</h3>
+                    <p class="menu-card__description">Poulet Tikka, Tandoori, Tenders, Boursin, Merguez, Chiche Kebab, Viande Hachée</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">Variable</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="supplements1">
+                    <div class="menu-card__image-container">
+                        <img src="images/cheese-burger.jpg.png" alt="Suppléments" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Suppléments</h3>
+                    <p class="menu-card__description">Cordon Bleu +100 DA | Steak de bœuf +200 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+100/+200 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="tacos" data-item-id="gratine1">
+                    <div class="menu-card__image-container">
+                        <img src="images/premium-burger.jpg.png" alt="Gratiné" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Gratiné</h3>
+                    <p class="menu-card__description">M +200 DA | L +300 DA | XL +400 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+200/+300/+400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandwiches Category -->
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="menu_sandwich1">
+                    <div class="menu-card__image-container">
+                        <img src="images/house-special-burger.jpg.png" alt="Menu Sandwich" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Menu +300 DA</h3>
+                    <p class="menu-card__description">Sandwich + Frites + Boisson</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+300 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="le_quatro1">
+                    <div class="menu-card__image-container">
+                        <img src="images/house-special-burger.jpg.png" alt="Le Quatro" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Le Quatro</h3>
+                    <p class="menu-card__description">Sandwich spécial maison</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="boursin1">
+                    <div class="menu-card__image-container">
+                        <img src="images/cheese-burger.jpg.png" alt="Boursin" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Boursin</h3>
+                    <p class="menu-card__description">Sandwich au Boursin</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="tandoori1">
+                    <div class="menu-card__image-container">
+                        <img src="images/spicy-burger.jpg.png" alt="Tandoori" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tandoori</h3>
+                    <p class="menu-card__description">Sandwich poulet tandoori</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="tikka1">
+                    <div class="menu-card__image-container">
+                        <img src="images/grilled-burger.jpg.png" alt="Tikka" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tikka</h3>
+                    <p class="menu-card__description">Sandwich poulet tikka</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">450 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="tenders1">
+                    <div class="menu-card__image-container">
+                        <img src="images/crispy-chicken-burger.jpg.png" alt="Tenders" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tenders</h3>
+                    <p class="menu-card__description">Sandwich aux tenders de poulet</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="toscan1">
+                    <div class="menu-card__image-container">
+                        <img src="images/classic-burger.jpg.png" alt="Toscan" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Toscan</h3>
+                    <p class="menu-card__description">Sandwich Toscan</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">550 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="chiche_kebab1">
+                    <div class="menu-card__image-container">
+                        <img src="images/grilled-burger.jpg.png" alt="Chiche Kebab" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Chiche Kebab</h3>
+                    <p class="menu-card__description">Sandwich chiche kebab</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">550 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="chicken_cheese1">
+                    <div class="menu-card__image-container">
+                        <img src="images/chicken-burger.jpg.png" alt="Chicken Cheese" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Chicken Cheese</h3>
+                    <p class="menu-card__description">Sandwich poulet fromage</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="buffalo1">
+                    <div class="menu-card__image-container">
+                        <img src="images/spicy-burger.jpg.png" alt="Buffalo" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Buffalo</h3>
+                    <p class="menu-card__description">Sandwich Buffalo</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="lalgerois1">
+                    <div class="menu-card__image-container">
+                        <img src="images/house-special-burger.jpg.png" alt="L'Algérois" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">L'Algérois</h3>
+                    <p class="menu-card__description">Sandwich l'Algérois</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="philly_cheese1">
+                    <div class="menu-card__image-container">
+                        <img src="images/beef-burger.jpg.png" alt="Philly Cheese" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Philly Cheese</h3>
+                    <p class="menu-card__description">Sandwich Philly Cheese</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">750 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" data-item-id="loriental1">
+                    <div class="menu-card__image-container">
+                        <img src="images/grilled-burger.jpg.png" alt="L'Oriental" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title menu-card__title--new">L'Oriental (New)</h3>
+                    <p class="menu-card__description">Sandwich l'Oriental</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">750 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizzas Category -->
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="bordure_fromage1">
+                    <div class="menu-card__image-container">
+                        <img src="images/cheese-burger.jpg.png" alt="Bordure fromage" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Bordure fromage</h3>
+                    <p class="menu-card__description">Medium +250 DA | Large +500 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">+250/+500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="classica1">
+                    <div class="menu-card__image-container">
+                        <img src="images/classic-burger.jpg.png" alt="Classica" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Classica</h3>
+                    <p class="menu-card__description">Sauce tomate, mozzarella, olives</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">500 / 1100 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="vegetarienne1">
+                    <div class="menu-card__image-container">
+                        <img src="images/mushroom-burger.jpg.png" alt="Vegetarienne" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Vegetarienne</h3>
+                    <p class="menu-card__description">Légumes frais, sauce tomate, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">700 / 1400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="reine1">
+                    <div class="menu-card__image-container">
+                        <img src="images/bacon-cheese-burger.jpg.png" alt="Reine" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Reine</h3>
+                    <p class="menu-card__description">Jambon, champignons, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">850 / 1700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="tikka_pizza1">
+                    <div class="menu-card__image-container">
+                        <img src="images/grilled-burger.jpg.png" alt="Tikka" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tikka</h3>
+                    <p class="menu-card__description">Poulet tikka, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">850 / 1700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="pepperoni1">
+                    <div class="menu-card__image-container">
+                        <img src="images/american-burger.jpg.png" alt="Pepperoni" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Pepperoni</h3>
+                    <p class="menu-card__description">Pepperoni, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">900 / 1800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="texane1">
+                    <div class="menu-card__image-container">
+                        <img src="images/bbq-burger.jpg.png" alt="Texane" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Texane</h3>
+                    <p class="menu-card__description">Viande hachée, BBQ, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">950 / 1900 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="pescator1">
+                    <div class="menu-card__image-container">
+                        <img src="images/premium-burger.jpg.png" alt="Pescator" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Pescator</h3>
+                    <p class="menu-card__description">Fruits de mer, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1800 / 3600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="venezia1">
+                    <div class="menu-card__image-container">
+                        <img src="images/chicken-burger.jpg.png" alt="Venezia" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Venezia</h3>
+                    <p class="menu-card__description">Crème fraîche, poulet, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">850 / 1700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="chevre_miel1">
+                    <div class="menu-card__image-container">
+                        <img src="images/house-special-burger.jpg.png" alt="Chèvre Miel" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Chèvre Miel</h3>
+                    <p class="menu-card__description">Chèvre, miel, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">950 / 1900 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="boursin_pizza1">
+                    <div class="menu-card__image-container">
+                        <img src="images/cheese-burger.jpg.png" alt="Boursin" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Boursin</h3>
+                    <p class="menu-card__description">Boursin, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1200 / 2400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="pizzas" data-item-id="norvegienne1">
+                    <div class="menu-card__image-container">
+                        <img src="images/premium-burger.jpg.png" alt="Norvégienne" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Norvégienne</h3>
+                    <p class="menu-card__description">Saumon fumé, mozzarella</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1550 / 3100 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salads Category -->
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="pates1">
+                    <div class="menu-card__image-container">
+                        <img src="images/classic-burger.jpg.png" alt="Pâtes" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Pâtes</h3>
+                    <p class="menu-card__description">Pâtes au choix</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">900 DA → 1700 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="salades1">
+                    <div class="menu-card__image-container">
+                        <img src="images/classic-burger.jpg.png" alt="Salades" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Salades</h3>
+                    <p class="menu-card__description">Nature 400 DA | César 800 DA | Cocktail Saumon 1100 DA</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">400 / 800 / 1100 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="pilon_poulet1">
+                    <div class="menu-card__image-container">
+                        <img src="images/grilled-burger.jpg.png" alt="Pilon de poulet" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Pilon de poulet</h3>
+                    <p class="menu-card__description">Grillade pilon de poulet</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1200 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="milanaise1">
+                    <div class="menu-card__image-container">
+                        <img src="images/chicken-burger.jpg.png" alt="Milanaise" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Milanaise</h3>
+                    <p class="menu-card__description">Grillade milanaise</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1400 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="salads" data-item-id="entrecote1">
+                    <div class="menu-card__image-container">
+                        <img src="images/beef-burger.jpg.png" alt="Entrecôte" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Entrecôte</h3>
+                    <p class="menu-card__description">Grillade entrecôte</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">1800 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sides Category -->
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="frites1">
+                    <div class="menu-card__image-container">
+                        <img src="images/classic-burger.jpg.png" alt="Frites" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Frites</h3>
+                    <p class="menu-card__description">Portion de frites maison</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">200 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="frites_sauce1">
+                    <div class="menu-card__image-container">
+                        <img src="images/cheese-burger.jpg.png" alt="Frites sauce fromagère" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Frites sauce fromagère</h3>
+                    <p class="menu-card__description">Frites nappées de sauce fromagère</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">300 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="tenders3pcs1">
+                    <div class="menu-card__image-container">
+                        <img src="images/crispy-chicken-burger.jpg.png" alt="Tenders 3pcs" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tenders 3pcs</h3>
+                    <p class="menu-card__description">3 pièces de poulet pané</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">350 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="tenders6pcs1">
+                    <div class="menu-card__image-container">
+                        <img src="images/crispy-chicken-burger.jpg.png" alt="Tenders 6pcs" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tenders 6pcs</h3>
+                    <p class="menu-card__description">6 pièces de poulet pané</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">600 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="tenders9pcs1">
+                    <div class="menu-card__image-container">
+                        <img src="images/crispy-chicken-burger.jpg.png" alt="Tenders 9pcs" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Tenders 9pcs</h3>
+                    <p class="menu-card__description">9 pièces de poulet pané</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">900 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="sides" data-item-id="boissons1">
+                    <div class="menu-card__image-container">
+                        <img src="images/american-burger.jpg.png" alt="Boissons" class="menu-card__image" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 class="menu-card__title">Boissons</h3>
+                    <p class="menu-card__description">Eau, canettes, jus nature, milkshakes, smoothies</p>
+                    <div class="menu-card__divider"></div>
+                    <div class="menu-card__footer">
+                        <span class="menu-card__price">50 DA → 500 DA</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-selector__btn quantity-minus" disabled>-</button>
+                            <span class="quantity-selector__value">0</span>
+                            <button class="quantity-selector__btn quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: var(--spacing-xl);">
+                <button class="hero__button hero__button--primary" id="view-full-menu">VOIR TOUT LE MENU</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="section-padding" id="instagram" style="background: var(--color-secondary-bg);">
+        <div class="container text-center">
+            <h2 class="page-title">INSTAGRAM</h2>
+            <div class="menu-card animate-on-scroll" style="max-width: 600px; margin: 0 auto; margin-bottom: var(--spacing-xl);">
+                <div style="font-size: 4rem; margin-bottom: var(--spacing-m);">📸</div>
+                <h3 style="color: var(--color-text-primary); margin-bottom: var(--spacing-s);">@thewallsnack</h3>
+                <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-l); line-height: 1.7;">
+                    Suivez-nous sur Instagram pour découvrir nos créations culinaires, 
+                    nos nouveaux plats et l'ambiance de notre restaurant street food.
+                </p>
+                <a href="https://www.instagram.com/thewallsnack?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                   target="_blank" 
+                   class="hero__button hero__button--primary"
+                   style="display: inline-flex; align-items: center; gap: var(--spacing-xs); text-decoration: none;">
+                    Suivre sur Instagram
+                </a>
+            </div>
+            
+            <div class="instagram-grid" id="instagram-gallery">
+                <!-- Dynamically populated by main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section section-padding" id="location">
+        <div class="container">
+            <h2 class="page-title text-center">LOCALISATION</h2>
+            <div class="location-container">
+                <div class="location-map animate-on-scroll">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=The%20Wall%20Restaurant%20Dely%20Ibrahim&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="location-info animate-on-scroll">
+                    <h3 class="location-title">THE WALL SNACK & RESTO</h3>
+                    <p class="location-tagline">Retrouvez-nous à Dely Ibrahim. Service rapide et ambiance street-food.</p>
+                    <div class="location-detail">
+                        <div class="location-label">ADRESSE :</div>
+                        <div class="location-value">Dely Ibrahim, Alger</div>
+                    </div>
+                    <div class="location-detail">
+                        <div class="location-label">HORAIRES :</div>
+                        <div class="location-value">Tous les jours : 12h00 – 00h00</div>
+                    </div>
+                    <div class="location-detail">
+                        <div class="location-label">TÉLÉPHONE :</div>
+                        <div class="location-value">0555 21 96 84</div>
+                    </div>
+                    <div class="location-detail" style="margin-top: var(--spacing-l);">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=The+Wall+Restaurant+Dely+Ibrahim" target="_blank" class="hero__button hero__button--primary" style="width: 100%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+                            OBTENIR LES DIRECTIONS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact" style="background: var(--color-secondary-bg);">
+        <div class="container">
+            <h2 class="page-title text-center">CONTACT</h2>
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <h3 class="contact-title">NOUS CONTACTER</h3>
+                    <p class="contact-subtitle">Commandes rapides par téléphone ou WhatsApp. Réponse directe via Facebook et Instagram.</p>
+                    <div class="contact-detail">
+                        <div class="contact-label">TÉLÉPHONE :</div>
+                        <div class="contact-value"><a href="tel:0555219684" style="color: var(--color-accent); text-decoration: none;">0555 21 96 84</a></div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-label">ADRESSE :</div>
+                        <div class="contact-value">Dely Ibrahim, Alger</div>
+                    </div>
+                    <div class="contact-social" style="margin-top: var(--spacing-m);">
+                        <a href="#" class="social-icon"><span>f</span></a>
+                        <a href="#" class="social-icon"><span>📸</span></a>
+                        <a href="#" class="social-icon"><span>💬</span></a>
+                    </div>
+                </div>
+                <div class="contact-form animate-on-scroll">
+                    <form class="contact-form-content" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Votre nom</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Entrez votre nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Votre email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Entrez votre adresse email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Votre message</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Entrez votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">ENVOYER</button>
+                    </form>
+                    <div id="form-status" class="form-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart -->
+    <div class="cart-float">
+        <span class="cart-float__icon">🛒</span>
+        <span class="cart-float__badge">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2026 The Wall Snack & Resto. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/instagram-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - The Wall Snack & Resto</title>
+    <meta name="description" content="Suivez The Wall Snack & Resto sur Instagram pour les dernières photos de nos burgers et street food.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-slideshow">
+            <div class="slide active" data-image="../backgrounds/burger-melted-cheese.jpg.jpg"></div>
+            <div class="slide" data-image="../backgrounds/burger-on-board.jpg.jpg"></div>
+            <div class="slide" data-image="../backgrounds/double-cheese-burger.jpg.jpg"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.jpg" alt="The Wall Snack & Resto" class="header__logo-img">
+                The Wall Snack & Resto
+            </a>
+            
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">ACCUEIL</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="menu.html" class="header__nav-link">MENU</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="instagram.html" class="header__nav-link header__nav-link--active">INSTAGRAM</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">À PROPOS</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="location.html" class="header__nav-link">LOCALISATION</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact.html" class="header__nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                
+                <button class="header__cta-button">VOIR LE MENU</button>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title-section">
+        <div class="container">
+            <h1 class="page-title">INSTAGRAM</h1>
+        </div>
+    </section>
+
+    <!-- Instagram Profile Section -->
+    <section class="section-padding" style="background: var(--color-secondary-bg);">
+        <div class="container text-center">
+            <div class="menu-card" style="max-width: 600px; margin: 0 auto;">
+                <div style="font-size: 4rem; margin-bottom: var(--spacing-m);">📸</div>
+                <h2 style="color: var(--color-text-primary); margin-bottom: var(--spacing-s);">@thewallsnack</h2>
+                <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-l); line-height: 1.7;">
+                    Suivez-nous sur Instagram pour découvrir nos créations culinaires, 
+                    nos nouveaux plats et l'ambiance de notre restaurant street food.
+                </p>
+                <a href="https://www.instagram.com/thewallsnack?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                   target="_blank" 
+                   class="hero__button hero__button--primary"
+                   style="display: inline-flex; align-items: center; gap: var(--spacing-xs);">
+                    <i class="fab fa-instagram"></i>
+                    Suivre sur Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Gallery -->
+    <section class="section-padding" style="background: var(--color-primary-bg);">
+        <div class="container">
+            <h2 class="page-title text-center" style="margin-bottom: var(--spacing-xl);">NOTRE GALERIE</h2>
+            
+            <div class="instagram-grid">
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/american-burger.jpg.png" alt="American Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🍔</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/bacon-cheese-burger.jpg.png" alt="Bacon Cheese Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🥓</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/bbq-burger.jpg.png" alt="BBQ Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🍖</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/beef-burger.jpg.png" alt="Beef Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🥩</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/cheese-burger.jpg.png" alt="Cheese Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🧀</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/chicken-burger.jpg.png" alt="Chicken Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🍗</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/classic-burger.jpg.png" alt="Classic Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🍔</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/crispy-chicken-burger.jpg.png" alt="Crispy Chicken Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🔥</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/double-burger.jpg.png" alt="Double Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🍔🍔</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/giant-burger.jpg.png" alt="Giant Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>👑</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/grilled-burger.jpg.png" alt="Grilled Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🔥</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/house-special-burger.jpg.png" alt="House Special Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>⭐</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/jalapeno-burger.jpg.png" alt="Jalapeno Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🌶️</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/loaded-burger.jpg.png" alt="Loaded Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>💯</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/mini-burger.jpg.png" alt="Mini Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>👶</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/mushroom-burger.jpg.png" alt="Mushroom Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🍄</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/premium-burger.jpg.png" alt="Premium Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>💎</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/smash-burger.jpg.png" alt="Smash Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>💥</span>
+                    </div>
+                </div>
+                
+                <div class="instagram-item animate-on-scroll">
+                    <img src="images/spicy-burger.jpg.png" alt="Spicy Burger" loading="lazy">
+                    <div class="instagram-overlay">
+                        <span>🌶️🔥</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding" style="background: var(--color-accent);">
+        <div class="container text-center">
+            <h2 style="color: var(--color-text-primary); margin-bottom: var(--spacing-m); font-family: var(--font-heading);">
+                REJOIGNEZ NOTRE COMMUNAUTÉ
+            </h2>
+            <p style="color: var(--color-text-primary); margin-bottom: var(--spacing-l); max-width: 600px; margin-left: auto; margin-right: auto; font-family: var(--font-body);">
+                Partagez vos expériences avec #TheWallSnack et faites partie de notre famille street food !
+            </p>
+            <a href="https://www.instagram.com/thewallsnack?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+               target="_blank" 
+               class="hero__button hero__button--secondary"
+               style="background: var(--color-text-primary); color: var(--color-accent); border: 2px solid var(--color-text-primary);">
+                <i class="fab fa-instagram"></i>
+                SUIVRE MAINTENANT
+            </a>
+        </div>
+    </section>
+
+    <!-- Floating Cart -->
+    <div class="cart-float">
+        <span class="cart-float__icon">🛒</span>
+        <span class="cart-float__badge">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2026 The Wall Snack & Resto. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>

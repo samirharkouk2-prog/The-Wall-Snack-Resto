@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localisation - The Wall Snack & Resto</title>
+    <meta name="description" content="Trouvez The Wall Snack & Resto à Dely Ibrahim. Horaires d'ouverture et informations de contact.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-slideshow">
+            <div class="slide active" data-image="../backgrounds/burger-melted-cheese.jpg.jpg"></div>
+            <div class="slide" data-image="../backgrounds/burger-on-board.jpg.jpg"></div>
+            <div class="slide" data-image="../backgrounds/double-cheese-burger.jpg.jpg"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.jpg" alt="The Wall Snack & Resto" class="header__logo-img">
+                The Wall Snack & Resto
+            </a>
+            
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">ACCUEIL</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="menu.html" class="header__nav-link">MENU</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">INSTAGRAM</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">À PROPOS</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="location.html" class="header__nav-link header__nav-link--active">LOCALISATION</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact.html" class="header__nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                
+                <button class="header__cta-button">VOIR LE MENU</button>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title-section">
+        <div class="container">
+            <h1 class="page-title">LOCALISATION</h1>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <div class="location-container">
+                <!-- Map Section -->
+                <div class="location-map animate-on-scroll">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=The%20Wall%20Restaurant%20Dely%20Ibrahim&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Location Info -->
+                <div class="location-info animate-on-scroll">
+                    <h2 class="location-title">THE WALL SNACK & RESTO</h2>
+                    <p class="location-tagline">
+                        Retrouvez-nous à Dely Ibrahim. Allez. Service rapide et ambiance street-food.
+                    </p>
+                    
+                    <div class="location-detail">
+                        <div class="location-label">ADRESSE :</div>
+                        <div class="location-value">Dely Ibrahim, Alger</div>
+                    </div>
+                    
+                    <div class="location-detail">
+                        <div class="location-label">HORAIRES :</div>
+                        <div class="location-value">Tous les jours : 12h00 – 00h00</div>
+                    </div>
+                    
+                    <div class="location-detail">
+                        <div class="location-label">TÉLÉPHONE :</div>
+                        <div class="location-value">0555 21 96 84</div>
+                    </div>
+                    
+                    <div class="location-detail" style="margin-top: var(--spacing-l);">
+                        <button class="hero__button hero__button--primary" style="width: 100%;">
+                            OBTENIR LES DIRECTIONS
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Info Section -->
+    <section class="section-padding" style="background: var(--color-primary-bg);">
+        <div class="container text-center">
+            <h2 style="color: var(--color-text-primary); margin-bottom: var(--spacing-m);">
+                COMMENT NOUS REJOINDRE
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-l); max-width: 800px; margin: 0 auto;">
+                <div class="menu-card" style="text-align: center;">
+                    <div style="font-size: 24px; margin-bottom: var(--spacing-s);">🚗</div>
+                    <h3 style="color: var(--color-text-primary); margin-bottom: var(--spacing-xs);">En Voiture</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 14px;">
+                        Stationnement disponible devant le restaurant
+                    </p>
+                </div>
+                
+                <div class="menu-card" style="text-align: center;">
+                    <div style="font-size: 24px; margin-bottom: var(--spacing-s);">🚶</div>
+                    <h3 style="color: var(--color-text-primary); margin-bottom: var(--spacing-xs);">À Pied</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 14px;">
+                        Accessible depuis la route principale de Dely Ibrahim
+                    </p>
+                </div>
+                
+                <div class="menu-card" style="text-align: center;">
+                    <div style="font-size: 24px; margin-bottom: var(--spacing-s);">📱</div>
+                    <h3 style="color: var(--color-text-primary); margin-bottom: var(--spacing-xs);">Commande Mobile</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 14px;">
+                        Commandez par WhatsApp pour une livraison rapide
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart -->
+    <div class="cart-float">
+        <span class="cart-float__icon">🛒</span>
+        <span class="cart-float__badge">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2026 The Wall Snack & Resto. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>
