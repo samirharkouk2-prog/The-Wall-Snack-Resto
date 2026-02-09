@@ -1,0 +1,21 @@
+const instagramImagesData = [
+  'american-burger.jpg.png',
+  'bacon-cheese-burger.jpg.png',
+  'bbq-burger.jpg.png',
+  'beef-burger.jpg.png',
+  'cheese-burger.jpg.png',
+  'chicken-burger.jpg.png',
+  'classic-burger.jpg.png',
+  'crispy-chicken-burger.jpg.png',
+  'double-burger.jpg.png',
+  'giant-burger.jpg.png',
+  'grilled-burger.jpg.png',
+  'house-special-burger.jpg.png',
+  'jalapeno-burger.jpg.png',
+  'loaded-burger.jpg.png',
+  'mini-burger.jpg.png',
+  'mushroom-burger.jpg.png',
+  'premium-burger.jpg.png',
+  'smash-burger.jpg.png',
+  'spicy-burger.jpg.png'
+];

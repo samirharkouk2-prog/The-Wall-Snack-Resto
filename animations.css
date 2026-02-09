@@ -1,0 +1,484 @@
+/* The Wall Snack & Resto - Animations and Transitions */
+
+/* Global Transitions */
+* {
+  transition-property: background-color, color, border-color, transform, box-shadow, opacity;
+  transition-duration: var(--transition-medium);
+  transition-timing-function: ease;
+}
+
+/* Button Animations */
+.hero__button,
+.header__cta-button,
+.form-submit {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__button::before,
+.header__cta-button::before,
+.form-submit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left var(--transition-medium);
+}
+
+.hero__button:hover::before,
+.header__cta-button:hover::before,
+.form-submit:hover::before {
+  left: 100%;
+}
+
+/* Card Hover Effects */
+.menu-card {
+  position: relative;
+}
+
+.menu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 107, 0, 0.1) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.menu-card:hover::before {
+  opacity: 1;
+}
+
+/* Staggered Animation for Menu Cards */
+.menu-grid {
+  perspective: 1000px;
+}
+
+.menu-card {
+  transform-style: preserve-3d;
+}
+
+.menu-card:nth-child(1) { transition-delay: 0.1s; }
+.menu-card:nth-child(2) { transition-delay: 0.2s; }
+.menu-card:nth-child(3) { transition-delay: 0.3s; }
+.menu-card:nth-child(4) { transition-delay: 0.4s; }
+.menu-card:nth-child(5) { transition-delay: 0.5s; }
+.menu-card:nth-child(6) { transition-delay: 0.6s; }
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out forwards;
+}
+
+/* Scale Up */
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-up {
+  animation: scaleUp 0.4s ease-out forwards;
+}
+
+/* Pulse Animation for Cart Badge */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.cart-float__badge--pulse {
+  animation: pulse 1.5s infinite;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--color-accent);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bounce Effect for Quantity Buttons */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+.quantity-selector__btn:active {
+  animation: bounce 0.6s;
+}
+
+/* Shake Animation for Form Validation */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.form-input--error,
+.form-textarea--error {
+  animation: shake 0.5s;
+  border-color: #ff4444;
+}
+
+/* Fade Out Animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-in forwards;
+}
+
+/* Entrance Animations for Different Sections */
+.hero {
+  animation: fadeIn 1s ease-out;
+}
+
+.menu-section {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.location-section {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.about-section {
+  animation: scaleUp 0.6s ease-out;
+}
+
+.contact-section {
+  animation: fadeIn 1.2s ease-out;
+}
+
+/* Smooth Scrolling Anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--color-accent);
+  z-index: 1001;
+  transition: width 0.1s ease-out;
+}
+
+/* Parallax Effect for Hero Background */
+.hero {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Text Gradient Animation */
+.gradient-text {
+  background: linear-gradient(45deg, var(--color-accent), #ff8c42, var(--color-accent));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Floating Animation for Decorative Elements */
+.floating-element {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Typewriter Effect for Hero Title */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid var(--color-accent);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--color-accent); }
+}
+
+/* Card Flip Animation */
+.card-flip {
+  perspective: 1000px;
+}
+
+.card-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-flip:hover .card-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.card-flip-front,
+.card-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.card-flip-back {
+  transform: rotateY(180deg);
+  background: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Wave Animation for Buttons */
+.wave-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.wave-button:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(50, 50);
+    opacity: 0;
+  }
+}
+
+/* Skeleton Loading Animation */
+.skeleton {
+  background: linear-gradient(90deg, #222222 25%, #333333 50%, #222222 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Zoom In on Hover for Images */
+.zoom-image {
+  transition: transform var(--transition-medium);
+}
+
+.zoom-image:hover {
+  transform: scale(1.05);
+}
+
+/* Glow Effect */
+.glow-effect {
+  box-shadow: 0 0 15px rgba(255, 107, 0, 0.3);
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 25px rgba(255, 107, 0, 0.5);
+}
+
+/* Smooth Height Transitions for Collapsible Elements */
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapsible-content.expanded {
+  max-height: 500px;
+}
+
+/* Notification Toast Animation */
+.toast {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background: var(--color-card-bg);
+  color: var(--color-text-primary);
+  padding: var(--spacing-s) var(--spacing-m);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateX(120%);
+  transition: transform 0.3s ease-out;
+  z-index: 1000;
+}
+
+.toast.show {
+  transform: translateX(0);
+}
+
+/* Delayed Animations */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+/* Intersection Observer Animation Triggers */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
